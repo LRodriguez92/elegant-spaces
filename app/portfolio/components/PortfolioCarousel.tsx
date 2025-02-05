@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import { ChevronLeft, ChevronRight } from "lucide-react"
-import Button from "@/components/ui/button"
+import { Button } from "@/components/ui/button"
 
 const portfolioItems = [
   { id: 1, image: "/placeholder.svg?height=720&width=1280", title: "Modern Minimalist Living Room" },
