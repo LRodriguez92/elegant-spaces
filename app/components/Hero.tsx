@@ -6,9 +6,12 @@ import { ChevronDown } from "lucide-react"
 
 export default function Hero() {
   const scrollToContent = () => {
-    const contentSection = document.getElementById("main-content")
-    if (contentSection) {
-      contentSection.scrollIntoView({ behavior: "smooth" })
+    const heroSection = document.querySelector('section')
+    if (heroSection) {
+      const nextSection = heroSection.nextElementSibling as HTMLElement
+      if (nextSection) {
+        nextSection.scrollIntoView({ behavior: "smooth" })
+      }
     }
   }
 
