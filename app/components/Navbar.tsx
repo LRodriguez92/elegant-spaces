@@ -105,24 +105,24 @@ export default function Navbar() {
       {isMenuOpen && (
         <div
           id="mobile-menu"
-          className="fixed inset-0 bg-warm-beige bg-opacity-98 z-50 flex flex-col items-center justify-center"
+          className="fixed inset-0 w-screen h-screen bg-warm-beige z-[9999] flex flex-col items-center justify-center"
           role="dialog"
           aria-modal="true"
           aria-label="Mobile navigation menu"
         >
           <button
-            className="absolute top-4 right-4 p-2 text-charcoal hover:bg-soft-blush hover:text-cream rounded-full transition-colors"
+            className="absolute top-6 right-6 p-2 text-charcoal hover:bg-soft-blush hover:text-cream rounded-full transition-colors"
             onClick={toggleMenu}
             aria-label="Close main menu"
           >
-            <X size={24} />
+            <X size={28} />
           </button>
-          <nav className="flex flex-col items-center space-y-6" aria-label="Mobile navigation">
+          <nav className="flex flex-col items-center space-y-8 w-full px-6" aria-label="Mobile navigation">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`font-sans text-xl text-charcoal hover:text-soft-blush transition-colors duration-300 ${
+                className={`font-sans text-2xl text-charcoal hover:text-soft-blush transition-colors duration-300 ${
                   pathname === link.href ? "border-b-2 border-soft-blush" : ""
                 }`}
                 onClick={toggleMenu}
@@ -133,7 +133,7 @@ export default function Navbar() {
             ))}
             <Link
               href="/contact"
-              className="bg-charcoal text-cream px-6 py-3 rounded-full font-sans text-xl transition-all hover:bg-opacity-90"
+              className="bg-charcoal text-cream px-8 py-4 rounded-full font-sans text-2xl transition-all hover:bg-opacity-90 mt-4"
               onClick={toggleMenu}
               aria-label="Contact Elegant Spaces"
             >
