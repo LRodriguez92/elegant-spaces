@@ -35,7 +35,7 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-warm-beige bg-opacity-95 shadow-md" : ""
+        isScrolled ? "bg-warm-beige bg-opacity-95 shadow-md" : "bg-charcoal bg-opacity-40 backdrop-blur-md"
       }`}
       role="banner"
     >
@@ -46,7 +46,9 @@ export default function Navbar() {
       >
         <Link
           href="/"
-          className="font-serif text-2xl text-charcoal hover:text-soft-blush transition-colors"
+          className={`font-serif text-2xl transition-colors ${
+            isScrolled ? "text-charcoal hover:text-soft-blush" : "text-cream hover:text-soft-blush"
+          }`}
           aria-label="Elegant Spaces - Home"
         >
           Elegant Spaces
@@ -58,7 +60,11 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className={`font-sans text-charcoal hover:text-soft-blush transition-colors duration-300 ${
+              className={`font-sans transition-colors duration-300 ${
+                isScrolled 
+                  ? "text-charcoal hover:text-soft-blush" 
+                  : "text-cream hover:text-soft-blush"
+              } ${
                 pathname === link.href ? "border-b-2 border-soft-blush" : ""
               }`}
               aria-current={pathname === link.href ? "page" : undefined}
@@ -68,7 +74,11 @@ export default function Navbar() {
           ))}
           <Link
             href="/contact"
-            className="bg-charcoal text-cream px-4 py-2 rounded-full font-sans transition-all hover:bg-opacity-90"
+            className={`px-4 py-2 rounded-full font-sans transition-all ${
+              isScrolled 
+                ? "bg-charcoal text-cream hover:bg-opacity-90" 
+                : "bg-cream text-charcoal hover:bg-soft-blush"
+            }`}
             aria-label="Contact Elegant Spaces"
           >
             Contact
@@ -77,7 +87,11 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-charcoal p-2 hover:bg-warm-beige rounded-full transition-colors"
+          className={`md:hidden p-2 mr-2 rounded-full transition-colors ${
+            isScrolled 
+              ? "text-charcoal hover:bg-warm-beige" 
+              : "text-cream hover:bg-charcoal hover:bg-opacity-50"
+          }`}
           onClick={toggleMenu}
           aria-expanded={isMenuOpen}
           aria-controls="mobile-menu"
