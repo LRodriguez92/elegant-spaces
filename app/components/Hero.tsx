@@ -37,13 +37,15 @@ export default function Hero() {
         >
           Book a Consultation
         </Link>
-        <button
-          onClick={scrollToContent}
-          className="absolute bottom-12 left-1/2 transform -translate-x-1/2 bg-charcoal text-cream p-4 rounded-full animate-bounce"
-          aria-label="Scroll to main content"
-        >
-          <ChevronDown className="w-6 h-6" />
-        </button>
+        <div className="absolute bottom-[-5rem] w-full flex justify-center">
+          <button
+            onClick={scrollToContent}
+            className="bg-charcoal text-cream p-4 rounded-full animate-bounce mr-10"
+            aria-label="Scroll to main content"
+          >
+            <ChevronDown className="w-6 h-6" />
+          </button>
+        </div>
       </div>
     </section>
   )
