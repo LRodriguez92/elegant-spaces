@@ -21,11 +21,11 @@ export default function OurStory() {
           <div className="md:w-1/2 animate-fade-in">
             <div className="relative w-full max-w-[600px] mx-auto">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/headshots/jane-doe.webp"
                 alt="Jane Doe, Founder of Elegant Spaces"
-                width={600}
+                width={300}
                 height={400}
-                className="rounded-lg shadow-lg w-full h-auto"
+                className="rounded-lg shadow-lg w-[400px] h-[500px]"
               />
             </div>
           </div>

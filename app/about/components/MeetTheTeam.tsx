@@ -7,25 +7,25 @@ const teamMembers = [
   {
     name: "Jane Doe",
     title: "Founder & Lead Designer",
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/headshots/jane-doe.webp",
     bio: "With over 20 years of experience, Jane leads our team with passion and innovation.",
   },
   {
     name: "John Smith",
     title: "Senior Interior Designer",
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/headshots/john-doe.webp",
     bio: "John specializes in modern minimalist designs that maximize both form and function.",
   },
   {
     name: "Emily Chen",
     title: "Sustainability Expert",
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/headshots/emily-chen.webp",
     bio: "Emily ensures our designs are not only beautiful but also environmentally responsible.",
   },
   {
     name: "Michael Brown",
     title: "Project Manager",
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/headshots/michael-brown.webp",
     bio: "Michael keeps our projects on track, on time, and exceeding client expectations.",
   },
 ]
