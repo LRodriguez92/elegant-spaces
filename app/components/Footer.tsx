@@ -18,7 +18,17 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="font-serif text-xl mb-4">Quick Links</h4>
-            <ul className="font-sans space-y-2">
+            <ul className="font-sans grid grid-cols-2 gap-x-4 gap-y-2">
+              <li>
+                <Link href="/" className="hover:text-warm-beige transition-colors">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="hover:text-warm-beige transition-colors">
+                  About
+                </Link>
+              </li>
               <li>
                 <Link href="/services" className="hover:text-warm-beige transition-colors">
                   Services
@@ -27,6 +37,11 @@ export default function Footer() {
               <li>
                 <Link href="/portfolio" className="hover:text-warm-beige transition-colors">
                   Portfolio
+                </Link>
+              </li>
+              <li>
+                <Link href="/faq" className="hover:text-warm-beige transition-colors">
+                  FAQ
                 </Link>
               </li>
               <li>
