@@ -1,0 +1,9 @@
+.portfolioHeroBg {
+  background-image: url('/images/heroes/portfolio-hero.webp');
+}
+
+@media (max-width: 768px) {
+  .portfolioHeroBg {
+    background-image: url('/images/heroes/portfolio-hero-mobile.webp');
+  }
+} 
