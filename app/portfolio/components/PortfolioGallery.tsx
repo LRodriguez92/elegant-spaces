@@ -10,34 +10,39 @@ const categories = ["All", "Luxury Residences", "Modern Spaces", "Classic Interi
 const projects = [
   {
     id: 1,
-    title: "Elegant Townhouse Renovation",
+    title: "Elegant Living Spaces",
     category: "Luxury Residences",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/heroes/portfolio-hero.webp",
   },
-  { id: 2, title: "Minimalist Loft Design", category: "Modern Spaces", image: "/placeholder.svg?height=600&width=400" },
+  { 
+    id: 2, 
+    title: "Modern Design Solutions", 
+    category: "Modern Spaces", 
+    image: "/images/heroes/portfolio-hero-mobile.webp" 
+  },
   {
     id: 3,
-    title: "Victorian Home Restoration",
+    title: "Luxury Interior Design",
     category: "Classic Interiors",
-    image: "/placeholder.svg?height=500&width=500",
+    image: "/images/heroes/services-hero.webp",
   },
   {
     id: 4,
-    title: "Eco-Friendly Apartment",
-    category: "Sustainable Design",
-    image: "/placeholder.svg?height=400&width=600",
+    title: "Contemporary Living",
+    category: "Modern Spaces",
+    image: "/images/heroes/about-hero-mobile.webp",
   },
   {
     id: 5,
-    title: "Luxurious Penthouse Suite",
-    category: "Luxury Residences",
-    image: "/placeholder.svg?height=600&width=400",
+    title: "Sustainable Living Room",
+    category: "Sustainable Design",
+    image: "/images/heroes/about-hero.webp",
   },
   {
     id: 6,
-    title: "Contemporary Office Space",
+    title: "Modern Office Design",
     category: "Modern Spaces",
-    image: "/placeholder.svg?height=500&width=500",
+    image: "/images/heroes/services-hero-mobile.webp",
   },
 ]
 

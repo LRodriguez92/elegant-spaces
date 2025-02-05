@@ -5,10 +5,26 @@ import Image from "next/image"
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa"
 
 const portfolioItems = [
-  { id: 1, image: "/placeholder.svg?height=720&width=1280", title: "Modern Minimalist Living Room" },
-  { id: 2, image: "/placeholder.svg?height=720&width=1280", title: "Luxurious Master Bedroom" },
-  { id: 3, image: "/placeholder.svg?height=720&width=1280", title: "Contemporary Kitchen Design" },
-  { id: 4, image: "/placeholder.svg?height=720&width=1280", title: "Elegant Home Office" },
+  { 
+    id: 1, 
+    image: "/images/heroes/portfolio-hero.webp", 
+    title: "Elegant Living Spaces" 
+  },
+  { 
+    id: 2, 
+    image: "/images/heroes/portfolio-hero-mobile.webp", 
+    title: "Modern Design Solutions" 
+  },
+  { 
+    id: 3, 
+    image: "/images/heroes/services-hero.webp", 
+    title: "Luxury Interior Design" 
+  },
+  { 
+    id: 4, 
+    image: "/images/heroes/about-hero-mobile.webp", 
+    title: "Contemporary Spaces" 
+  },
 ]
 
 export default function PortfolioCarousel() {
