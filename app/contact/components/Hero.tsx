@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-charcoal bg-opacity-50"></div>
       <div className="relative z-10 text-center text-cream px-4">
         <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl mb-4 animate-fade-in">
-          Let's Create Your Dream Space
+          Let&apos;s Connect
         </h1>
         <p className="font-sans text-xl md:text-2xl mb-8 animate-fade-in">
           Reach out today to schedule a consultation or ask any questions.

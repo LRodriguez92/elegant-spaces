@@ -13,8 +13,8 @@ export default function OurStory() {
               but also nurture the soul.
             </p>
             <p className="font-sans text-lg leading-relaxed mt-4">
-              Over the years, we've had the privilege of bringing countless dreams to life, crafting spaces that reflect
-              the unique personalities and aspirations of our clients. Our commitment to excellence, attention to
+              Over the years, we&apos;ve had the privilege of bringing countless dreams to life, crafting spaces that reflect
+              the unique personalities and aspirations of our clients. We&apos;re committed to excellence, attention to
               detail, and innovative design approach have established us as a leading name in luxury interior design.
             </p>
           </div>

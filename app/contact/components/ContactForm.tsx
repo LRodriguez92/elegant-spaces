@@ -98,7 +98,7 @@ export default function ContactForm() {
         </form>
         {submitSuccess && (
           <div className="mt-6 p-4 bg-soft-blush text-charcoal rounded-md font-serif text-center">
-            Thank you for your message. We'll get back to you soon!
+            Thank you for your message. We&apos;ll get back to you soon!
           </div>
         )}
       </div>

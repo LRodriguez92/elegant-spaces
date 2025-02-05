@@ -87,7 +87,7 @@ export default function QuickContact() {
         </form>
         {submitSuccess && (
           <div className="mt-6 p-4 bg-soft-blush text-charcoal rounded-md font-serif text-center">
-            Thanks! We'll get back to you within 24 hours.
+            Thanks! We&apos;ll get back to you within 24 hours.
           </div>
         )}
       </div>
