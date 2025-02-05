@@ -22,7 +22,7 @@ export default function OurStory() {
             <div className="relative w-full max-w-[600px] mx-auto">
               <Image
                 src="/images/headshots/team.webp"
-                alt="Jane Doe, Founder of Elegant Spaces"
+                alt="Team of Elegant Spaces"
                 width={300}
                 height={400}
                 className="rounded-lg shadow-lg w-full h-auto"

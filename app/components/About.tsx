@@ -15,8 +15,8 @@ export default function About() {
         <div className="md:w-1/2 md:pl-12 flex justify-center items-center">
           <div className="w-full max-w-md">
             <Image
-              src="/placeholder.svg?height=500&width=500"
-              alt="Lead Designer"
+              src="/images/headshots/team.webp"
+              alt="Team of Elegant Spaces"
               width={500}
               height={500}
               className="rounded-lg shadow-lg w-full h-auto"
