@@ -18,14 +18,16 @@ export default function OurStory() {
               detail, and innovative design approach have established us as a leading name in luxury interior design.
             </p>
           </div>
-          <div className="md:w-1/2 animate-fade-in flex justify-center items-center">
-            <Image
-              src="/placeholder.svg?height=400&width=600"
-              alt="Jane Doe, Founder of Elegant Spaces"
-              width={600}
-              height={400}
-              className="rounded-lg shadow-lg"
-            />
+          <div className="md:w-1/2 animate-fade-in">
+            <div className="relative w-full max-w-[600px] mx-auto">
+              <Image
+                src="/placeholder.svg?height=400&width=600"
+                alt="Jane Doe, Founder of Elegant Spaces"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-lg w-full h-auto"
+              />
+            </div>
           </div>
         </div>
       </div>

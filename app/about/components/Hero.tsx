@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Hero() {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative h-screen flex items-center justify-center overflow-hidden w-screen">
       <picture>
         <source
           media="(max-width: 768px)"
@@ -17,7 +17,7 @@ export default function Hero() {
         />
       </picture>
       <div className="absolute inset-0 bg-charcoal bg-opacity-50"></div>
-      <div className="relative z-10 text-center text-cream px-4">
+      <div className="relative z-10 text-center text-cream px-4 max-w-full">
         <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl mb-4 animate-fade-in">
           Designing Timeless Interiors with Passion & Precision
         </h1>
