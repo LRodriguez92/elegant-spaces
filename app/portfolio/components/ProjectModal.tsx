@@ -34,27 +34,29 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
       isOpen={true}
       onRequestClose={onClose}
       contentLabel={`${project.title} Details`}
-      className="max-w-4xl w-full mx-auto mt-20 bg-cream rounded-lg shadow-xl outline-none"
+      className="max-w-4xl w-full mx-auto mt-20 bg-cream rounded-lg shadow-xl outline-none max-h-[90vh] overflow-y-auto"
       portalClassName="fixed inset-0 z-50 flex items-center justify-center px-4"
       overlayClassName="fixed inset-0 bg-charcoal bg-opacity-75"
     >
       <div className="relative p-6">
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-charcoal hover:text-warm-beige transition-colors"
+          className="absolute top-4 right-4 text-charcoal hover:text-warm-beige transition-colors z-10"
           aria-label="Close modal"
         >
           <X size={24} />
         </button>
         <h2 className="font-serif text-3xl mb-4">{project.title}</h2>
         <div className="mb-6">
-          <Image
-            src={projectImages[currentImageIndex] || "/placeholder.svg"}
-            alt={`${project.title} - Image ${currentImageIndex + 1}`}
-            width={800}
-            height={600}
-            className="w-full h-auto rounded-lg"
-          />
+          <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
+            <Image
+              src={projectImages[currentImageIndex] || "/placeholder.svg"}
+              alt={`${project.title} - Image ${currentImageIndex + 1}`}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="object-cover"
+            />
+          </div>
           <div className="flex justify-center mt-4">
             {projectImages.map((_, index) => (
               <button
