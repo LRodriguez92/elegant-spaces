@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useEffect } from "react"
 import Image from "next/image"
 import Modal from "react-modal"
 import { X } from "lucide-react"
@@ -18,13 +18,6 @@ interface ProjectModalProps {
 }
 
 export default function ProjectModal({ project, onClose }: ProjectModalProps) {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0)
-  const projectImages = [
-    project.image,
-    "/placeholder.svg?height=600&width=800",
-    "/placeholder.svg?height=800&width=600",
-  ]
-
   useEffect(() => {
     Modal.setAppElement("body")
   }, [])
@@ -50,22 +43,12 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         <div className="mb-6">
           <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
             <Image
-              src={projectImages[currentImageIndex] || "/placeholder.svg"}
-              alt={`${project.title} - Image ${currentImageIndex + 1}`}
+              src={project.image}
+              alt={project.title}
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover"
             />
-          </div>
-          <div className="flex justify-center mt-4">
-            {projectImages.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentImageIndex(index)}
-                className={`w-3 h-3 rounded-full mx-2 ${index === currentImageIndex ? "bg-charcoal" : "bg-warm-beige"}`}
-                aria-label={`View image ${index + 1}`}
-              />
-            ))}
           </div>
         </div>
         <div className="mb-6">
